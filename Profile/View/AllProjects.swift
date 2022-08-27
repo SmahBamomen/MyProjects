@@ -14,7 +14,8 @@ struct AllProjects: View {
             info in
             NavigationLink(destination: ProjectDetails(info: info)) {
                 VStack{
-                    ImageLoading(imageURL: info.appLogo,imageWidth: 110,imageHeight: 100)
+                    ImageLoading(imageURL: info.appLogo,imageWidth: 110,imageHeight: 100).background(RoundedRectangle(cornerRadius: 4.0))
+                        .foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 0.909))
                     Text(info.projectName).font(.subheadline).fontWeight(.medium).foregroundColor(.black)
                        
                 } .frame(width: 130, height: 150)

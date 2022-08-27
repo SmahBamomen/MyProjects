@@ -13,7 +13,8 @@ struct ProjectDetails: View {
         ScrollView{
             VStack(alignment: .leading, spacing: 15){
             
-                ImageLoading(imageURL: info.imageURL,imageWidth: 350 ,imageHeight: 300)
+                ImageLoading(imageURL: info.imageURL,imageWidth: 330 ,imageHeight: 250)
+                    .padding(.horizontal)
                 Text(info.projectName)
                     .font(.headline)
                     .fontWeight(.heavy)
@@ -29,7 +30,7 @@ struct ProjectDetails: View {
                 }
                 Text("© 2022 \(info.teamNames)")
                     .font(.caption)
-                    .fontWeight(.thin)
+                    .fontWeight(.thin)  .multilineTextAlignment(.leading)
             }
             .padding(.leading)
         }

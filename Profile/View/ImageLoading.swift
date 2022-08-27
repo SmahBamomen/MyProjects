@@ -20,8 +20,7 @@ struct ImageLoading: View {
                    case .success(let image):
                        image
                            .resizable().frame(width: imageWidth, height: imageHeight)
-                           .aspectRatio(contentMode: .fit).background(RoundedRectangle(cornerRadius: 4.0))
-                           .foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 0.909))
+                           .aspectRatio(contentMode: .fill)
                    case .failure:
                        Text("Failed fetching image. Make sure to check your data connection and try again.")
                            .foregroundColor(.red)

@@ -15,7 +15,7 @@ struct ExperienceView: View {
             VStack(alignment: .leading){
                 HStack{
                     Spacer().frame(width: 15)
-                    ImageLoading(imageURL: info.logo,imageWidth: 140 , imageHeight: 110)
+                    ImageLoading(imageURL: info.logo,imageWidth: 120 , imageHeight: 110)
 
                     Spacer().frame(width: 15)
                     VStack(alignment: .leading,spacing: 6){

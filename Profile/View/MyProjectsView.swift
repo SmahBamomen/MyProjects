@@ -12,13 +12,15 @@ struct MyProjectsView: View {
     let columns = [
             GridItem(.flexible()),
             GridItem(.flexible()),
+            GridItem(.flexible()),
         ]
     var body: some View {
         ScrollView {
-                    LazyVGrid(columns: columns, spacing: 10) {
-                        AllProjects()
-                    }
-                    .padding(.horizontal)
+                    LazyVGrid(columns: columns, spacing: 25) {
+                        AllProjects().padding(.horizontal)
+                          
+                    } 
+                    
                 }
      
     }
