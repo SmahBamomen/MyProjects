@@ -21,6 +21,8 @@ class FirebaseManager : ObservableObject {
         fetchExperienceInfo()
         fetchProjectsInfo()
     }
+    
+    // Function to get all profile information from firebase
     func fetchProfileInfo(){
    
         let docRef = db.collection("profile").document("GE2KMysAkyZh6IuLmMYR")
@@ -47,6 +49,8 @@ class FirebaseManager : ObservableObject {
               
 
           }
+    
+    // Function to get all projects information from firebase
     func fetchProjectsInfo(){
         db.collection("projects").getDocuments() { (querySnapshot, error) in
                    if let error = error {
@@ -69,6 +73,8 @@ class FirebaseManager : ObservableObject {
                    }
        }
     }
+    
+    // Function to get all experience information from firebase
     func fetchExperienceInfo(){
         db.collection("experience").getDocuments() { (querySnapshot, error) in
                    if let error = error {

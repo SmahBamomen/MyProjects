@@ -122,15 +122,11 @@
 		52B6CD2328B83A8300FFCEB5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				52B6CD1628B8332C00FFCEB5 /* ContentView.swift */,
-				52B6CD3128B83D4F00FFCEB5 /* HomeView.swift */,
-				52B6CD3328B83D6500FFCEB5 /* ChatView.swift */,
-				52B6CD3528B8483700FFCEB5 /* MyProjectsView.swift */,
-				52B6CD3728B87E7200FFCEB5 /* ProfileView.swift */,
-				52B6CD5228B8CBC300FFCEB5 /* ExperienceView.swift */,
-				52B6CD5428B8E24C00FFCEB5 /* ProjectDetails.swift */,
+				52E0923F28B9A06A00A5D5D2 /* TabView */,
+				52E0923E28B9A04E00A5D5D2 /* Projects */,
+				52E0923D28B9A03D00A5D5D2 /* Experience */,
+				52E0923C28B9A02700A5D5D2 /* Profile */,
 				52B6CD5B28B8FA2300FFCEB5 /* ImageLoading.swift */,
-				52B6CD5D28B9061100FFCEB5 /* AllProjects.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -141,6 +137,42 @@
 				52B6CD4828B8A2B600FFCEB5 /* FirebaseManager.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		52E0923C28B9A02700A5D5D2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				52B6CD3728B87E7200FFCEB5 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		52E0923D28B9A03D00A5D5D2 /* Experience */ = {
+			isa = PBXGroup;
+			children = (
+				52B6CD5228B8CBC300FFCEB5 /* ExperienceView.swift */,
+			);
+			path = Experience;
+			sourceTree = "<group>";
+		};
+		52E0923E28B9A04E00A5D5D2 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				52B6CD3528B8483700FFCEB5 /* MyProjectsView.swift */,
+				52B6CD5428B8E24C00FFCEB5 /* ProjectDetails.swift */,
+				52B6CD5D28B9061100FFCEB5 /* AllProjects.swift */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		52E0923F28B9A06A00A5D5D2 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				52B6CD3128B83D4F00FFCEB5 /* HomeView.swift */,
+				52B6CD3328B83D6500FFCEB5 /* ChatView.swift */,
+				52B6CD1628B8332C00FFCEB5 /* ContentView.swift */,
+			);
+			path = TabView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
